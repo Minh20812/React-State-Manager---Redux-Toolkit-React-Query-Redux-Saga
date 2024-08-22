@@ -1,7 +1,7 @@
-import { useGetAllProductQuery } from "../app/service/dummyData";
+import { useGetAllProductsQuery } from "../app/service/dummyData";
 
 const AllProducts = () => {
-  const { data, isError, isLoading } = useGetAllProductQuery();
+  const { data, isError, isLoading } = useGetAllProductsQuery();
   console.log(data);
 
   if (isError) {
